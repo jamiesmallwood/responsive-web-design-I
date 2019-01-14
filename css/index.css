@@ -287,6 +287,7 @@ nav a {
 @media (max-width: 500px) {
     header {
         height: auto;
+        position: unset;
     }
 
     .header-content-container {
@@ -297,6 +298,7 @@ nav a {
 
     nav {
         flex-direction: column;
+        align-self: stretch;
     }
 
     .logo {
@@ -312,5 +314,9 @@ nav a {
     nav a {
         padding: 30px;
         margin: 0;
+    }
+
+    .text-grid-container {
+        flex-direction: column;
     }
 }
