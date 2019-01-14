@@ -97,7 +97,8 @@ ul {
 }
 
 figure {
-	padding-bottom: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 button {
@@ -117,7 +118,6 @@ button {
 
 header {
 	z-index: 1;
-	position: sticky;
 	top: 0;
 	background-color: white;
 	/* box-shadow: 0 1px 10px rgba(0,0,0,0.2); */
@@ -282,6 +282,19 @@ nav a {
     .main-image-container {
         display: none;
     }
+
+    .services-facts-container {
+        flex-direction: column;
+    }
+
+    .services-facts-container section, .services-facts-container figure {
+        width: 100%;
+    }
+
+    .services-info-img {
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -319,4 +332,13 @@ nav a {
     .text-grid-container {
         flex-direction: column;
     }
+
+    .info-grid-container {
+        flex-direction: column;
+    }
+
+    .info-grid-item {
+        width: 100%;
+    }
+
 }
