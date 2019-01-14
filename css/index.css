@@ -128,21 +128,28 @@ header {
 }
 
 .content-container, .header-content-container {
-	width: 1024px;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .header-content-container {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0;
+}
+
+header a {
+    order: 1;
+
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	flex-grow: 1;
-	max-width: 610px;
+	max-width: 100%;
 }
 
 nav a {
@@ -247,4 +254,63 @@ nav a {
 .copyright {
 	text-align: center;
 	margin: 40px 0;
+}
+
+@media (max-width: 800px) {
+
+    .header-content-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    header a {
+        order: 1;
+    }
+
+    .logo {
+        padding: 30px;
+    }
+
+    .main-title-container {
+        width: 100%;
+    }
+
+    .main-image-container {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: auto;
+    }
+
+    .header-content-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 20px;
+    }
+
+    header a {
+        border-bottom: 1px solid black;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 30px;
+        margin: 0;
+    }
 }
